@@ -5,13 +5,17 @@ int main()
 
     int ch,n1,n2;
     while (1){
-        printf("Choose the Serial number of logical circuit\n");
+        printf("Choose the Serial number of logical circuit \n");
         printf(" 1.Decoder\n");
         printf(" 2.Encoder\n");
+        printf(" 0.Exit\n");
         scanf("%d",&ch);
         switch(ch){
+        case 0:
+            exit(0);
+            break;
         case 1:
-            printf("Choose the Serial number of decoder\n");
+            printf("Choose the Serial number of decoder \n");
             printf(" 1. 1:2 Decoder \n ");
             printf(" 2. 2:4 Decoder \n ");
             printf(" 3. 3:8 Decoder \n ");
@@ -27,7 +31,7 @@ int main()
             encoder(n2);
         break;
         default:
-            printf("Enter the valid choice");
+            printf("Enter the valid choice\n");
         break;
         }
     }
