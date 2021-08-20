@@ -1,21 +1,20 @@
-#include<stdio.h>
-#include<stdlib.h>
+#include "digital.h"
 int main()
 {
 
     int ch,n1,n2;
     while (1){
-        printf("Choose the Serial number of logical circuit \n");
-        printf(" 1.Decoder\n");
-        printf(" 2.Encoder\n");
-        printf(" 0.Exit\n");
+        printf(" Choose the Serial number of logical circuit \n");
+        printf(" 1. Decoder\n");
+        printf(" 2. Encoder\n");
+        printf(" 0. Exit\n");
         scanf("%d",&ch);
         switch(ch){
         case 0:
             exit(0);
             break;
         case 1:
-            printf("Choose the Serial number of decoder \n");
+            printf(" Choose the Serial number of decoder \n");
             printf(" 1. 1:2 Decoder \n ");
             printf(" 2. 2:4 Decoder \n ");
             printf(" 3. 3:8 Decoder \n ");
@@ -23,7 +22,7 @@ int main()
             decoder(n1);
         break;
         case 2:
-            printf("Choose the Serial number of decoder \n");
+            printf(" Choose the Serial number of decoder \n");
             printf(" 1. 2:1 encoder \n");
             printf(" 2. 4:2 encoder \n");
             printf(" 3. 8:3 encoder \n");
